@@ -11,7 +11,7 @@ app = FastAPI()
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://llm-text-client.vercel.app"],  # Your Next.js frontend domain
+    allow_origins=["https://llm-text-client.vercel.app", "https://markdown-generator.wetrocloud.com", "http://127.0.0.1:3000"],  # Your Next.js frontend domain
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
